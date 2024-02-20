@@ -26,29 +26,29 @@ function Services() {
 
 
       {/* Services Head Start */}
-      <section className="h-screen text-black flex items-center justify-center">
+      {/* <section className="h-screen text-black flex items-center justify-center">
         <div className="flex flex-col gap-4 justify-center items-center w-full">
           <h1 className='text-4xl font-semibold'>Our Services</h1>
           <p className='px-12 text-center text-lg font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor id aliquam dignissim risus diam dictum. A lectus in ridiculus viverra id ut dui volutpat volutpat. Vulputate sed imperdiet magna ac nunc faucibus. Enim eget egestas ipsum sed sed non ut nulla. Et consectetur venenatis vulputate aliquet gravida eget non</p>
         </div>
-      </section>
+      </section> */}
       {/* Services Head End */}
 
       {/* Services Intro Start */}
       <section className={`md:h-[900px] md:mb-0 mb-9 bg-gradient-to-r from-[#F1F1F4]  to-[#DEDDEA]`}>
-        <div className="flex flex-col items-center md:items-strech gap-8 text-black">
+        <div className="flex p-7 flex-col items-center md:items-strech gap-8 text-black">
           <h4 className='text-black font-semibold text-center'>Our Services</h4>
           <h1 className='text-4xl text-[#020329] font-semibold text-center'>With Quality Services For You</h1>
 
-          <div className="flex flex-col justify-left gap-6">
+          <div className="md:mt-6 flex flex-col justify-left gap-6">
             <div className="flex md:flex-row flex-col gap-6 w-full md:ml-[200px]">
-              <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services">
+              <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>Mukham</h3>
                 <img className='h-[300px]' src="/mukham-logo.svg" alt="" />
                 <p className='font-light text-xs text-center'>Application to simplfy the overall process of marking attendance</p>
               </div>
 
-              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services">
+              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>MauthN</h3>
                 <img className='h-[300px]' src="/m-auth.svg" alt="" />
                 <p className='font-light text-xs text-center mt-[15px]'>Admire the authentication</p>
@@ -57,13 +57,13 @@ function Services() {
             </div>
 
             <div className="flex md:flex-row flex-col gap-6 md:ml-[500px]">
-              <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services">
+              <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>mXdr</h3>
                 <img className='h-[300px]' src="/mxdr.svg" alt="" />
                 <p className='font-light text-xs text-center'>Extended detection and response</p>
               </div>
 
-              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services ">
+              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services ">
                 <h3 className='text-xl font-semibold mt-9'>M-Isolate</h3>
                 <img className='h-[300px]' src="/m-isolate.svg" alt="" />
                 <p className='font-light text-xs text-center'>Disposable Workspaces & <br /> Safest Web Browser in the World!</p>
@@ -87,9 +87,11 @@ function Services() {
 
 
       {/* Services Testimonials Start */}
-      <section ref={sectionRef} className={`md:h-screen ${isVisible ? 'animation' : ''}`}>
+      {/* <section ref={sectionRef} className={`md:h-screen ${isVisible ? 'animation' : ''}`}>
         <div className="flex md:flex-row flex-col items-center justify-center gap-[150px]">
-          <div className="md:w-[450px] w-[300px] md:h-[480px] h-[330px] bg-[#ccc]"></div>
+          <div className="md:w-[450px] w-[300px] md:h-[300px] h-[260px] bg-[#ccc]">
+            <img src="/testimonials.png" alt="" />
+          </div>
           <div className="md:w-[500px] w-full text-black p-7">
             <h4 className='font-semibold text-sm text-black'>Testimonials</h4>
             <h1 className='text-4xl my-2 font-semibold '>Hello World, Welcome to <br /> <span className="text-[#FA975C]">Digital Fortress</span></h1>
@@ -100,7 +102,7 @@ function Services() {
           
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Services Testimonials End */}
 
 
@@ -145,8 +147,8 @@ function Services() {
                 <h3 className='text-2xl font-semibold'>Contact Us</h3>
                 <ul className='flex flex-col gap-2.5'>
                   <li className='text-base flex gap-3'><img src="/mobile-phone-8-256.png" alt="" className="h-5 w-5" />&nbsp;+91 9585583918</li>
-                  <li className='text-base flex gap-3'><img src="/mail-256.png" alt="" className="h-5 w-5" />&nbsp;@gmail.com</li>
-                  <li className='text-base flex gap-3'><img src="/pin-8-256.png" alt="" className="h-5 w-5" />&nbsp;Vijayawada</li>
+                  <li className='text-base flex gap-3'><img src="/mail-256.png" alt="" className="h-5 w-5" />&nbsp;sibi@digitalfortress.in</li>
+                  <li className='text-base flex gap-3'><img src="/pin-8-256.png" alt="" className="h-5 w-5" />&nbsp;VTBIF, VIT AP University</li>
                 </ul>
               </div>
             </div>
@@ -162,14 +164,7 @@ function Services() {
       </section>
       {/* Footer Section End */}
 
-      <section className='h-screen'>
-      <div className="flex h-full flex-col gap-6 items-center justify-center text-black">
-        <img className='md:w-full w-[350px] ' src="/404.svg" alt="" />
-        <h1 className='text-4xl font-semibold'>Page not found</h1>
-        <p className='text-xxl font-semibold'>OOPS...Try Again :/</p>
-        <a href="/" className="bg-[#4E3F63] p-6 text-white font-semibold">Home Page</a>
-      </div>
-      </section>
+    
     </>
   );
 }

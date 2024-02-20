@@ -28,12 +28,12 @@ import React, { useEffect, useRef, useState } from 'react';
     <>
 
     {/* About Us Head Start */}
-    <section className="h-screen text-black flex items-center justify-center">
+    {/* <section className="h-screen text-black flex items-center justify-center">
         <div className="flex flex-col gap-4 justify-center items-center w-100">
           <h1 className='text-4xl font-semibold'>About Us</h1>
           <p className='text-lg text-center'>It involves using biometric security software to automatically recognise people based on their behavioural or biological characteristics.</p>
         </div>
-      </section> 
+      </section>  */}
       {/* About Us Head End */}
 
 
@@ -63,7 +63,9 @@ import React, { useEffect, useRef, useState } from 'react';
         </div>
 
         <div className="shadow-2xl rounded-b-[250px] rounded-t-[250px] bg-white md:w-[420px] w-[320px] md:h-[530px] h-[430px] flex items-center justify-center">
-          <div className='bg-[#ccc] md:w-[400px] w-[300px] md:h-[460px] h-[360px] m-9 rounded-b-[250px] rounded-t-[250px]' ></div>
+          <div className='md:w-[400px] w-[300px] md:h-[460px] h-[360px] m-9 rounded-b-[250px] rounded-t-[250px]' >
+            <img className=' md:w-[400px] w-[300px] md:h-[460px] h-[360px] rounded-b-[250px] rounded-t-[250px]' src="/sheild.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -72,9 +74,11 @@ import React, { useEffect, useRef, useState } from 'react';
     
 
     {/* About Us Testimonials Start */}
-    <section className='md:h-screen md:my-0 my-8'>
+    {/* <section className='md:h-screen md:my-0 my-8'>
         <div className="flex md:flex-row flex-col items-center justify-center gap-[150px]">
-          <div className="md:w-[450px] w-[300px] md:h-[480px] h-[330px] bg-[#ccc]"></div>
+          <div className="md:w-[450px] w-[300px] md:h-[300px] h-[260px] bg-[#ccc]">
+            <img src="/testimonials.png" alt="" />
+          </div>
           <div className="md:w-[500px] w-full text-black p-7">
             <h4 className='font-semibold text-sm text-black'>Testimonials</h4>
             <h1 className='text-4xl my-2 font-semibold '>Hello World, Welcome to <br /> <span className="text-[#FA975C]">Digital Fortress</span></h1>
@@ -85,7 +89,7 @@ import React, { useEffect, useRef, useState } from 'react';
           
           </div>
         </div>
-      </section>
+      </section> */}
       {/* About Us Testimonials End */}
 
       {/* About Us Featured Start */} 
@@ -95,7 +99,7 @@ import React, { useEffect, useRef, useState } from 'react';
           <div className="flex md:flex-row flex-col justify-around items-center mt-12">
             <div className="w-[250px]">
               <img className='md:mt-[25px] mt-[25px] h-[300px]' src="/cloud-summit.svg" alt="" />
-              <h3 className='text-xl font-semibold mt-9'>Cloud Security Align Summit</h3>
+              <h3 className='text-xl font-semibold mt-9'>Cloud Security Alliance Summit</h3>
               <p className='font-light text-xs'>Banglore</p>
             </div>
               <div className="w-[250px]">
@@ -104,7 +108,7 @@ import React, { useEffect, useRef, useState } from 'react';
                 <p className='font-light text-xs'>Vishakapatnam</p>
             </div>
               <div className="w-[250px]">
-                <img className='md:mt-[15px] mt-[25px] h-[300px]' src="/fido.svg" alt="" />
+                <img className='md:mt-[15px] mt-[25px] h-[300px]' src="/fido.png" alt="" />
                 <h3 className='text-xl font-semibold mt-9'>Fido(Fast Identity Online Developer) Challenge</h3>
               </div>
               <div className="w-[250px]">
@@ -158,8 +162,8 @@ import React, { useEffect, useRef, useState } from 'react';
                 <h3 className='text-2xl font-semibold'>Contact Us</h3>
                 <ul className='flex flex-col gap-2.5'>
                   <li className='text-base flex gap-3'><img src="/mobile-phone-8-256.png" alt="" className="h-5 w-5" />&nbsp;+91 9585583918</li>
-                  <li className='text-base flex gap-3'><img src="/mail-256.png" alt="" className="h-5 w-5" />&nbsp;@gmail.com</li>
-                  <li className='text-base flex gap-3'><img src="/pin-8-256.png" alt="" className="h-5 w-5" />&nbsp;Vijayawada</li>
+                  <li className='text-base flex gap-3'><img src="/mail-256.png" alt="" className="h-5 w-5" />&nbsp;sibi@digitalfortress.in</li>
+                  <li className='text-base flex gap-3'><img src="/pin-8-256.png" alt="" className="h-5 w-5" />&nbsp;VTBIF, VIT AP University</li>
                 </ul>
               </div>
             </div>

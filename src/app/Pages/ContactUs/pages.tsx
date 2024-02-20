@@ -30,12 +30,12 @@ import React, { useState } from 'react';
   return (
     <>
       {/* Contact Head Start */}
-       <section className="bg-gradient-to-r from-green-300 to-blue-300 h-screen text-black flex items-center justify-center">
+       {/* <section className="bg-gradient-to-r from-green-300 to-blue-300 h-screen text-black flex items-center justify-center">
         <div className="flex flex-col gap-4 justify-center items-center w-100">
           <h1 className='text-4xl font-semibold'>Contact US</h1>
           <p className='text-lg font-light text-center'>Reach us out for inquiries, support or collaboration opportunities.</p>
         </div>
-      </section> 
+      </section>  */}
       {/* Contact Head End */}
 
       {/* Contact Form Start */}
@@ -70,7 +70,7 @@ import React, { useState } from 'react';
                   <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={4} className="mt-1 p-2 block w-full shadow-2xl border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"></textarea>
                 </div>
                 <div className="mt-6">
-                  <button type="submit" className="bg-indigo-600 text-white px-9 py-4 bg-[#0B0C30]">Send Message</button>
+                  <button type="submit" className="text-white px-9 py-4 bg-[#423359] hover:bg-[#6f5b8d]">Send Message</button>
                 </div>
               </form>
             </div>
@@ -79,8 +79,8 @@ import React, { useState } from 'react';
               <h1 className='text-4xl font-semibold'>Need More Help?</h1>
               <ul className='flex flex-col gap-3'>
                 <li className='font-semibold flex gap-3'><img src="/call.svg" alt="" className="h-5 w-5" />&nbsp;+91 9585583918</li>
-                <li className='font-semibold flex gap-3'><img src="/message.svg" alt="" className="h-5 w-5" />&nbsp;example@gmail.com</li>
-                <li className='font-semibold flex gap-3'><img src="/location.svg" alt="" className="h-5 w-5" />&nbsp;Incubation Center, VIT AP University</li>
+                <li className='font-semibold flex gap-3'><img src="/message.svg" alt="" className="h-5 w-5" />&nbsp;sibi@digitalfortress.in</li>
+                <li className='font-semibold flex gap-3'><img src="/location.svg" alt="" className="h-5 w-5" />&nbsp;VTBIF, VIT AP University</li>
               </ul>
 
             </div>
@@ -138,8 +138,8 @@ import React, { useState } from 'react';
                 <h3 className='text-2xl font-semibold'>Contact Us</h3>
                 <ul className='flex flex-col gap-2.5'>
                   <li className='text-base flex gap-3'><img src="/mobile-phone-8-256.png" alt="" className="h-5 w-5" />&nbsp;+91 9585583918</li>
-                  <li className='text-base flex gap-3'><img src="/mail-256.png" alt="" className="h-5 w-5" />&nbsp;@gmail.com</li>
-                  <li className='text-base flex gap-3'><img src="/pin-8-256.png" alt="" className="h-5 w-5" />&nbsp;Vijayawada</li>
+                  <li className='text-base flex gap-3'><img src="/mail-256.png" alt="" className="h-5 w-5" />&nbsp;sibi@digitalfortress.in</li>
+                  <li className='text-base flex gap-3'><img src="/pin-8-256.png" alt="" className="h-5 w-5" />&nbsp;VTBIF, VIT AP University</li>
                 </ul>
               </div>
             </div>
