@@ -41,7 +41,10 @@ body {
   }
 
   .shadow-services {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 
+    40px 40px 50px 0px rgba(225, 225, 230, 0.8),
+    0px 0px 50px 0px rgba(217, 217, 217, 0.2) inset,
+    -40px -40px 80px 0px rgba(255, 255, 255, 0.8);
   }
 
   .shadow-inset {

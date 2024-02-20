@@ -35,20 +35,20 @@ function Services() {
       {/* Services Head End */}
 
       {/* Services Intro Start */}
-      <section className={`md:h-[900px] md:mb-0 mb-9`}>
+      <section className={`md:h-[900px] md:mb-0 mb-9 bg-gradient-to-r from-[#F1F1F4]  to-[#DEDDEA]`}>
         <div className="flex flex-col items-center md:items-strech gap-8 text-black">
           <h4 className='text-black font-semibold text-center'>Our Services</h4>
           <h1 className='text-4xl text-[#020329] font-semibold text-center'>With Quality Services For You</h1>
 
           <div className="flex flex-col justify-left gap-6">
             <div className="flex md:flex-row flex-col gap-6 w-full md:ml-[200px]">
-              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services">
+              <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>Mukham</h3>
                 <img className='h-[300px]' src="/mukham-logo.svg" alt="" />
                 <p className='font-light text-xs text-center'>Application to simplfy the overall process of marking attendance</p>
               </div>
 
-              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services ">
+              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>MauthN</h3>
                 <img className='h-[300px]' src="/m-auth.svg" alt="" />
                 <p className='font-light text-xs text-center mt-[15px]'>Admire the authentication</p>
@@ -57,7 +57,7 @@ function Services() {
             </div>
 
             <div className="flex md:flex-row flex-col gap-6 md:ml-[500px]">
-              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services">
+              <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>mXdr</h3>
                 <img className='h-[300px]' src="/mxdr.svg" alt="" />
                 <p className='font-light text-xs text-center'>Extended detection and response</p>
