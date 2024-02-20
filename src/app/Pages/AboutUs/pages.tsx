@@ -45,7 +45,7 @@ import React, { useEffect, useRef, useState } from 'react';
         <div className="md:mt-0 mt-[50px]">
           <h4 className='text-black font-semibold'>About Us</h4>
           <h1 className='text-4xl text-[#020329] font-semibold'>Transform Security With <br /> Biometric Recognition. It's Just A <br /> Click Away With <span className="text-[#FA975C]">Digital Fortress</span></h1>
-          <p className='my-7 text-[#6A6A6C]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, accusamus <br /> modi eius voluptates delectus deserunt earum eaque natus eum. <br />  Et voluptatem doloremque cumque adipisci.</p>
+          <p className='my-7 text-[#6A6A6C]'>Revolutionizing security with cutting-edge biometric solutions, Digital Fortress leads <br /> the way in authentication technology. Our innovations ensure unparalleled accuracy <br /> and reliability, empowering individuals and organizations with peace of mind</p>
           <button className='text-sm bg-[#423359] px-14 py-4'>See Details</button>
         </div>
       </section>

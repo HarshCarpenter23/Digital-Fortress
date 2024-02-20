@@ -4,21 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 
 function Services() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const { top } = sectionRef.current!.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-
-      setIsVisible(top < windowHeight);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   return (
     // Services section with a full height background
     <>
@@ -44,7 +30,7 @@ function Services() {
             <div className="flex md:flex-row flex-col gap-6 w-full md:ml-[200px]">
               <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>Mukham</h3>
-                <img className='h-[300px]' src="/mukham-logo.svg" alt="" />
+                <img className='h-[300px]' src="/mukham.png" alt="" />
                 <p className='font-light text-xs text-center'>Application to simplfy the overall process of marking attendance</p>
               </div>
 
@@ -65,7 +51,7 @@ function Services() {
 
               <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services ">
                 <h3 className='text-xl font-semibold mt-9'>M-Isolate</h3>
-                <img className='h-[300px]' src="/m-isolate.svg" alt="" />
+                <img className='h-[300px]' src="/misolate.png" alt="" />
                 <p className='font-light text-xs text-center'>Disposable Workspaces & <br /> Safest Web Browser in the World!</p>
               </div>
             </div>

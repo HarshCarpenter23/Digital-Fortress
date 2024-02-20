@@ -1,61 +1,47 @@
 'use client'
-import Image from "next/image";
-import award from '@/app/assets/Award.svg';
-import BG from '@/app/assets/BG.svg';
+
+import { useEffect, useRef, useState } from "react";
 
 function Main() {
 
-  const handleStarted = () => {
-    var x = document.getElementById('text1');
-    var hero = document.getElementById('hero');
-    var btn = document.getElementById('getStarted');
-    var image = document.getElementById('image');
-    var award = document.getElementById('award');
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
-    x?.classList.replace('text-lg', 'text-xl');
-    x?.classList.add('text-white');
-    btn?.classList.add('hidden');
-    hero?.classList.replace('text-[#E76E26]','text-white')
-    image?.classList.add('h-screen', 'w-full', 'z-0','transition-image');
-    image?.classList.remove('hidden');
-    award?.classList.add('hidden'); // Hide awards section
-  }
+  useEffect(() => {
+    const handleScroll = () => {
+      const { top } = sectionRef.current!.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+
+      setIsVisible(top < windowHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
+  
+  
+
+
 
   return (
-<>
-<section className="h-screen relative">
-      {/* Background Image */}
-      <div id="image" className="transition ease-in duration-1000 hidden absolute inset-0 overflow-hidden">
-        <Image src={BG} alt="Background Image" layout="fill" objectFit="cover" />
-      </div>
-      {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center z-10">
-        <h1 id="hero" className="transition text-center ease-in-out duration-500 md:text-7xl text-4xl text-[#E76E26] md:tracking-wide">
-          Redefining The Authentication
-        </h1>
-        <p id="text1" className="text-black  text-lg w-7/12 text-center mt-2 transition ease-in-out duration-500 mx-auto tracking-normal">
-          It involves using biometric security software to automatically recognise people based on their behavioural or biological characteristics.
-        </p>
-        <button id="getStarted" className="mt-7 bg-[#423359] hover:bg-[#6f5b8d] py-4 px-9" onClick={handleStarted}>
-          Get started
-        </button>
-      </div>
-      {/* Award section */}
-      <div id="award" className="md:opacity-100 opacity-0 absolute inset-y-0 right-0">
-        <div className="flex justify-center text-[#0A394A]">
-          <Image src={award} height={600} width={300} alt="award-image" className="static object-cover"/>
-          <div className="absolute flex flex-col justify-center text-center mt-24 gap-2">
-            <div className="flex flex-col gap-1">
-              <h1 className="anton tracking-wide text-xs font-bold">DIGITAL FORTRESS PRIVATE LIMITED</h1>
-              <p className="poppins text-xs">Cyber Security</p>
-            </div>
-            <div className="flex flex-col gap-1">
-              <h1 className="anton tracking-wide text-sm font-bold">DeepTech AI & Cloud Summit</h1>
-              <p className="poppins text-xs">10th Feb 2024</p>
-              <p className="poppins-med text-xs">Visakhapatnam</p>
-            </div>
-          </div>
-        </div>  
+  <>
+    <section className="md:h-[500px] animate-fadeIn">
+      <div className="flex md:flex-row relative md:right-40 flex-col md:h-[500px] w-full items-center justify-around gap-6 md:gap-0 mb-9 md:mb-0">
+        <div className="flex flex-col gap-6 justify-center items-center">
+          <h1 id="hero" className="transition ease-in-out text-black text-center duration-500 md:text-7xl text-4xl">
+            Redefining The <br /> <span className="text-[#E76E26]">Authentication</span>  
+          </h1>
+          <h1 className="text-blue-900 text-3xl text-center orange-border font-semibold">Experience our Award Winning Product</h1>
+          <p id="text1" className="text-black text-lg md:w-1/2 text-center mt-2 transition ease-in-out duration-500 mx-auto ">
+            It involves using biometric security software to automatically recognise people based on their behavioural or biological characteristics.
+          </p>
+        </div>
+
+        <div className="flex items-center justify-center z-20 ">
+          <img className="md:w-[400px] w-[300px]" src="/home-bg.jpg" alt="" />
+        </div>
       </div>
     </section>
 
@@ -81,14 +67,14 @@ function Main() {
         </div>
       </section>
 
-      <section className={`md:h-screen  flex md:flex-row p-9 flex-col items-center justify-around`}>
+      <section ref={sectionRef} className={`md:h-screen flex md:flex-row p-9 flex-col items-center justify-around ${isVisible ? 'animation' : ''}`}>
         <div className='md:w-[350px] md:h-[350px] w-[300px] h-[300px]' >
           <img className="rounded-full shadow-2xl" src="/aboutus-logo.png" alt="" />
         </div>
         <div className="md:mt-0 mt-[50px]">
           <h4 className='text-black font-semibold'>About Us</h4>
           <h1 className='text-4xl text-[#020329] font-semibold'>Transform Security With <br /> Biometric Recognition. It's Just A <br /> Click Away With <span className="text-[#FA975C]">Digital Fortress</span></h1>
-          <p className='my-7 text-[#6A6A6C]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, accusamus <br /> modi eius voluptates delectus deserunt earum eaque natus eum. <br />  Et voluptatem doloremque cumque adipisci.</p>
+          <p className='my-7 text-[#6A6A6C]'>Revolutionizing security with cutting-edge biometric solutions, Digital Fortress leads <br /> the way in authentication technology. Our innovations ensure unparalleled accuracy <br /> and reliability, empowering individuals and organizations with peace of mind </p>
           <button className='text-sm bg-[#423359] hover:bg-[#6f5b8d] px-14 py-4'>See Details</button>
         </div>
       </section>
@@ -102,7 +88,7 @@ function Main() {
             <div className="flex md:flex-row flex-col gap-6 w-full md:ml-[200px]">
               <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>Mukham</h3>
-                <img className='h-[300px]' src="/mukham-logo.svg" alt="" />
+                <img className='h-[300px]' src="/mukham.png" alt="" />
                 <p className='font-light text-xs text-center'>Application to simplfy the overall process of marking attendance</p>
               </div>
 
@@ -122,8 +108,8 @@ function Main() {
               </div>
 
               <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-white p-9 shadow-services ">
-                <h3 className='text-xl font-semibold mt-9'>M-Isolate</h3>
-                <img className='h-[300px]' src="/m-isolate.svg" alt="" />
+                <h3 className='text-xl  font-semibold mt-9'>M-Isolate</h3>
+                <img className='h-[100px]' src="/misolate.png" alt="" />
                 <p className='font-light text-xs text-center'>Disposable Workspaces & <br /> Safest Web Browser in the World!</p>
               </div>
             </div>
