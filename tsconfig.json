@@ -5,13 +5,17 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "esModuleInterop": true,
+
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
     "incremental": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+
+    "declaration": true,
+    "jsxFactory": "React.createElement",
     "plugins": [
       {
         "name": "next"

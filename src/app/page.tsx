@@ -45,8 +45,8 @@ export default function Home() {
           <button className="hover:text-indigo-900 hover:font-semibold" onClick={() => handleNavigation("Products")}>Products</button>
           
         </div>
-        <div className="">
-        <button className="bg-[#423359] px-6 py-4 text-white hover:text-[#f1f1f1]" onClick={() => handleNavigation("ContactUs")}>Contact Us</button>
+        <div className="flex justify-center">
+        <button className="bg-[#423359] px-6 py-2 md-mt-0 mt-4 md:py-4 text-white hover:text-[#f1f1f1] " onClick={() => handleNavigation("ContactUs")}>Contact Us</button>
         </div>
       </div>
       {renderPage()} {/* Render the current page component */}
