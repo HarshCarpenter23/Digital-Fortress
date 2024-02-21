@@ -1,7 +1,7 @@
 // Import the necessary libraries
 "use client";
 import React, { useState } from 'react';  
- 
+import Image from 'next/image';
  
   function ContactUs() {
 
@@ -78,10 +78,28 @@ import React, { useState } from 'react';
             <div className="flex flex-col gap-6">
               <h1 className='text-4xl font-semibold'>Need More Help?</h1>
               <ul className='flex flex-col gap-3'>
-                <li className='font-semibold flex gap-3'><img src="/call.svg" alt="" className="h-5 w-5" />&nbsp;+91 9585583918</li>
-                <li className='font-semibold flex gap-3'><img src="/message.svg" alt="" className="h-5 w-5" />&nbsp;sibi@digitalfortress.in</li>
-                <li className='font-semibold flex gap-3'><img src="/location.svg" alt="" className="h-5 w-5" />&nbsp;VTBIF, VIT AP University</li>
-              </ul>
+                  <li className='text-base flex gap-3'><Image
+                  className="h-5 w-5"
+        src="/call.svg" // Path to your image
+        alt="Description of the image"
+        width={500} // Desired width of the image
+        height={300} // Desired height of the image
+      />&nbsp;+91 9585583918</li>
+                  <li className='text-base flex gap-3'><Image
+                  className="h-5 w-5"
+        src="/message.svg" // Path to your image
+        alt="Description of the image"
+        width={500} // Desired width of the image
+        height={300} // Desired height of the image
+      />&nbsp;sibi@digitalfortress.in</li>
+                  <li className='text-base flex gap-3'><Image
+                  className="h-5 w-5"
+        src="/location.svg" // Path to your image
+        alt="Description of the image"
+        width={500} // Desired width of the image
+        height={300} // Desired height of the image
+      />&nbsp;VTBIF, VIT AP University</li>
+                </ul>
 
             </div>
           </div>
@@ -92,7 +110,13 @@ import React, { useState } from 'react';
         <section className='md:h-screen flex w-full items-center justify-center' >
           <div>
             <h3 className='text-4xl font-semibold text-center text-black mb-9'>Map</h3>
-            <img className='md:w-[500px] w-[300px] md:mb-0 mb-6' src="/map.svg" alt="" />
+            <Image
+        src="/map.svg" // Path to your image
+        className='md:w-[500px] w-[300px] md:mb-0 mb-6'
+        alt="Description of the image"
+        width={500} // Desired width of the image
+        height={300} // Desired height of the image
+      />
           </div>
         </section>
       {/* Map End */}
@@ -137,9 +161,27 @@ import React, { useState } from 'react';
               <div className="flex flex-col text-white gap-3 mx-4">
                 <h3 className='text-2xl font-semibold'>Contact Us</h3>
                 <ul className='flex flex-col gap-2.5'>
-                  <li className='text-base flex gap-3'><img src="/mobile-phone-8-256.png" alt="" className="h-5 w-5" />&nbsp;+91 9585583918</li>
-                  <li className='text-base flex gap-3'><img src="/mail-256.png" alt="" className="h-5 w-5" />&nbsp;sibi@digitalfortress.in</li>
-                  <li className='text-base flex gap-3'><img src="/pin-8-256.png" alt="" className="h-5 w-5" />&nbsp;VTBIF, VIT AP University</li>
+                  <li className='text-base flex gap-3'><Image
+                  className="h-5 w-5"
+        src="/mobile-phone-8-256.png" // Path to your image
+        alt="Description of the image"
+        width={500} // Desired width of the image
+        height={300} // Desired height of the image
+      />&nbsp;+91 9585583918</li>
+                  <li className='text-base flex gap-3'><Image
+                  className="h-5 w-5"
+        src="/mail-256.png" // Path to your image
+        alt="Description of the image"
+        width={500} // Desired width of the image
+        height={300} // Desired height of the image
+      />&nbsp;sibi@digitalfortress.in</li>
+                  <li className='text-base flex gap-3'><Image
+                  className="h-5 w-5"
+        src="/pin-8-256.png" // Path to your image
+        alt="Description of the image"
+        width={500} // Desired width of the image
+        height={300} // Desired height of the image
+      />&nbsp;VTBIF, VIT AP University</li>
                 </ul>
               </div>
             </div>

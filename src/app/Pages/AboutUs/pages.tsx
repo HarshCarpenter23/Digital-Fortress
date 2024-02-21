@@ -1,6 +1,7 @@
 // Import the necessary libraries
 "use client";
 import React, { useEffect, useRef, useState } from 'react';  
+import Image from 'next/image';
  
  
   function AboutUs() {
@@ -40,7 +41,13 @@ import React, { useEffect, useRef, useState } from 'react';
       {/* About Us Intro Start */}
       <section ref={sectionRef} className={`md:h-screen  flex md:flex-row p-9 flex-col items-center justify-around ${isVisible ? 'animation' : ''}`}>
         <div className='md:w-[350px] md:h-[350px] w-[300px] h-[300px]' >
-          <img className="rounded-full shadow-2xl" src="/aboutus-logo.png" alt="" />
+        <Image
+        src="/aboutus-logo.png" // Path to your image
+        alt="Description of the image"
+        className="rounded-full shadow-2xl"
+        width={350}
+        height={350}
+      />
         </div>
         <div className="md:mt-0 mt-[50px]">
           <h4 className='text-black font-semibold'>About Us</h4>
@@ -64,7 +71,13 @@ import React, { useEffect, useRef, useState } from 'react';
 
         <div className="shadow-2xl rounded-b-[250px] rounded-t-[250px] bg-white md:w-[420px] w-[320px] md:h-[530px] h-[430px] flex items-center justify-center">
           <div className='md:w-[400px] w-[300px] md:h-[460px] h-[360px] m-9 rounded-b-[250px] rounded-t-[250px]' >
-            <img className=' md:w-[400px] w-[300px] md:h-[460px] h-[360px] rounded-b-[250px] rounded-t-[250px]' src="/sheild.png" alt="" />
+          <Image
+            src="/sheild.png" // Path to your image
+            alt="Description of the image"
+            className=' md:w-[400px] w-[300px] md:h-[460px] h-[360px] rounded-b-[250px] rounded-t-[250px]'
+            width={400} // Desired width of the image
+            height={460} // Desired height of the image
+          />
           </div>
         </div>
       </div>
@@ -98,21 +111,45 @@ import React, { useEffect, useRef, useState } from 'react';
           <h1 className='text-5xl font-semibold text-center'>Featured In</h1>
           <div className="flex md:flex-row flex-col justify-around items-center mt-12">
             <div className="w-[250px]">
-              <img className='md:mt-[25px] mt-[25px] h-[300px]' src="/cloud-summit.svg" alt="" />
+            <Image
+              src="/cloud-summit.svg" // Path to your image
+              alt="Description of the image"
+              width = {250}
+              height={300}
+              className='md:mt-[25px] mt-[25px] h-[300px]'
+            />
               <h3 className='text-xl font-semibold mt-9'>Cloud Security Alliance Summit</h3>
               <p className='font-light text-xs'>Banglore</p>
             </div>
               <div className="w-[250px]">
-                <img className='md:mt-0 mt-[25px] h-[300px]' src="/deep-tech.svg" alt="" />
+              <Image
+                src="/deep-tech.svg" // Path to your image
+                alt="Description of the image"
+                width = {250}
+                height={300}
+                className='md:mt-0 mt-[25px] h-[300px]'
+              />
                 <h3 className='text-xl font-semibold mt-9'>Deep Tech Summit</h3>
                 <p className='font-light text-xs'>Vishakapatnam</p>
             </div>
               <div className="w-[250px]">
-                <img className='md:mt-[15px] mt-[25px] h-[300px]' src="/fido.png" alt="" />
+              <Image
+                src="/fido.png" // Path to your image
+                alt="Description of the image"
+                className='md:mt-[15px] mt-[25px] h-[300px]'
+                width = {250}
+                height={300}
+              />
                 <h3 className='text-xl font-semibold mt-9'>Fido(Fast Identity Online Developer) Challenge</h3>
               </div>
               <div className="w-[250px]">
-                <img className='h-[300px] md:mt-0 mt-[25px]' src="/inex.svg" alt="" />
+              <Image
+                src="/inex.svg" // Path to your image
+                alt="Description of the image"
+                className='h-[300px] md:mt-0 mt-[25px]'
+                width = {250}
+                height={300}
+              />
                 <h3 className='text-xl font-semibold mt-9'>INEX</h3>
                 <p className='font-light text-xs'>Goa</p>
               </div>
