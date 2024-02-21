@@ -29,53 +29,54 @@ function Services() {
 
           <div className="md:mt-6 flex flex-col justify-left gap-6">
             <div className="flex md:flex-row flex-col gap-6 w-full md:ml-[200px]">
-              <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
+              <div className="z-10 flex flex-col gap-9 justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>Mukham</h3>
                 <Image
-                  className='h-[300px]'
+                  className='h-[250px]'
                   src="/mukham.png" // Path to your image
                   alt="Description of the image"
-                  width={150} // Desired width of the image
-                  height={200} // Desired height of the image
+                  width={250} // Desired width of the image
+                  height={250} // Desired height of the image
                 />
                 <p className='font-light text-xs text-center'>Application to simplfy the overall process of marking attendance</p>
               </div>
 
-              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
+              <div className="flex flex-col justify-around items-center gap-6 md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>MauthN</h3>
                 <Image
-                  className='h-[300px]'
+                  className='h-[250px]'
                   src="/m-auth.svg" // Path to your image
                   alt="Description of the image"
-                  width={150} // Desired width of the image
-                  height={150} // Desired height of the image
+                  width={100} // Desired width of the image
+                  height={100} // Desired height of the image
                 />
-                <p className='font-light text-xs text-center mt-[15px]'>Admire the authentication</p>
-                <p className='font-light text-xs text-center'>Passwordless authentication to remove risk of cyber attacks</p>
+                <p className='font-light text-xs text-center mt-[15px]'>Admire the authentication
+                <br />Passwordless authentication to remove risk of cyber attacks</p>
+                {/* <p className='font-light text-xs text-center'></p> */}
               </div>
             </div>
 
             <div className="flex md:flex-row flex-col gap-6 md:ml-[500px]">
-              <div className="z-10 flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
+              <div className="z-10 flex flex-col justify-around items-center gap-7 md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
                 <h3 className='text-xl font-semibold mt-9'>mXdr</h3>
                 <Image
-                  className='h-[300px]'
+                  className='h-[250px]'
                   src="/mxdr.svg" // Path to your image
                   alt="Description of the image"
-                  width={150} // Desired width of the image
-                  height={150} // Desired height of the image
+                  width={100} // Desired width of the image
+                  height={100} // Desired height of the image
                 />
                 <p className='font-light text-xs text-center'>Extended detection and response</p>
               </div>
 
-              <div className="flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services ">
+              <div className="flex flex-col justify-around items-center gap-7 md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services ">
                 <h3 className='text-xl font-semibold mt-9'>M-Isolate</h3>
                 <Image
                   className='h-[300px]'
                   src="/mIsolate.png" // Path to your image
                   alt="Description of the image"
                   width={200} // Desired width of the image
-                  height={200} // Desired height of the image
+                  height={100} // Desired height of the image
                 />
                 <p className='font-light text-xs text-center'>Disposable Workspaces & <br /> Safest Web Browser in the World!</p>
               </div>

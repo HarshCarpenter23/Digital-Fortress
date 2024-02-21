@@ -80,21 +80,21 @@ import Image from 'next/image';
               <ul className='flex flex-col gap-3'>
                   <li className='text-base flex gap-3'><Image
                   className="h-5 w-5"
-        src="/call.svg" // Path to your image
+        src="/pngegg.png" // Path to your image
         alt="Description of the image"
         width={500} // Desired width of the image
         height={300} // Desired height of the image
       />&nbsp;+91 9585583918</li>
                   <li className='text-base flex gap-3'><Image
                   className="h-5 w-5"
-        src="/message.svg" // Path to your image
+        src="/mess.png" // Path to your image
         alt="Description of the image"
         width={500} // Desired width of the image
         height={300} // Desired height of the image
       />&nbsp;sibi@digitalfortress.in</li>
                   <li className='text-base flex gap-3'><Image
                   className="h-5 w-5"
-        src="/location.svg" // Path to your image
+        src="/location-pin.png" // Path to your image
         alt="Description of the image"
         width={500} // Desired width of the image
         height={300} // Desired height of the image
