@@ -1,91 +1,27 @@
-'use client'
-
-import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-
-function Main() {
-
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const { top } = sectionRef.current!.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
+// Import the necessary libraries
+"use client";
+import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 
-      setIsVisible(top < windowHeight);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-  
-  
-  
-
-
+function Services() {
 
   return (
-  <>
-    <section className="md:h-[500px] animate-fadeIn">
-      <div className="flex md:flex-row relative md:right-40 flex-col md:h-[500px] w-full items-center justify-around gap-6 md:gap-0 mb-9 md:mb-0">
-        <div className="flex flex-col gap-6 justify-center items-center">
-          <h1 id="hero" className="transition ease-in-out text-black text-center duration-500 md:text-7xl text-4xl">
-            Redefining The <br /> <span className="text-[#E76E26]">Authentication</span>  
-          </h1>
-          <h1 className="text-blue-900 text-3xl text-center orange-border font-semibold">Experience our Award Winning Product</h1>
-          <p id="text1" className="text-black text-lg md:w-1/2 text-center mt-2 transition ease-in-out duration-500 mx-auto ">
-            It involves using biometric security software to automatically recognise people based on their behavioural or biological characteristics.
-          </p>
+    // Services section with a full height background
+    <>
+
+
+
+      {/* Services Head Start */}
+      {/* <section className="h-screen text-black flex items-center justify-center">
+        <div className="flex flex-col gap-4 justify-center items-center w-full">
+          <h1 className='text-4xl font-semibold'>Our Services</h1>
+          <p className='px-12 text-center text-lg font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor id aliquam dignissim risus diam dictum. A lectus in ridiculus viverra id ut dui volutpat volutpat. Vulputate sed imperdiet magna ac nunc faucibus. Enim eget egestas ipsum sed sed non ut nulla. Et consectetur venenatis vulputate aliquet gravida eget non</p>
         </div>
+      </section> */}
+      {/* Services Head End */}
 
-        <div className="flex items-center justify-center z-20 ">
-          {/* <img className="md:w-[400px] w-[300px]" src="/home-bg.jpg" alt="" /> */}
-          <Image
-            src="/fingerprint.svg" // Path to your image
-            alt="Description of the image"
-            width={500} // Desired width of the image
-            height={300} // Desired height of the image
-          />
-        </div>
-      </div>
-    </section>
-
-      <section className="md:h-screen md:mb-0 mb-6 flex items-center justify-center">
-        <div className="flex md:flex-row flex-col gap-16 justify-center items-center">
-          <div className="z-10 text-black flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
-                <img className='h-[100px]' src="/seamless.svg" alt="" />
-                <h3 className='text-xl font-semibold mt-9'>Seamless Integration</h3>
-                <p className='font-light text-xs text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor id aliquam dignissim risus diam dictum. A lectus in ridiculus viverra id ut </p>
-          </div>
-
-          <div className="z-10 text-black flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
-                <img className='h-[100px]' src="/biometric.svg" alt="" />
-                <h3 className='text-xl font-semibold mt-9'>Multi model Biometric</h3>
-                <p className='font-light text-xs text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor id aliquam dignissim risus diam dictum. A lectus in ridiculus viverra id ut </p>
-          </div>
-
-          <div className="z-10 text-black flex flex-col justify-around items-center md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
-                <img className='h-[100px]' src="/easy-access.svg" alt="" />
-                <h3 className='text-xl font-semibold mt-9'>Easy to access</h3>
-                <p className='font-light text-xs text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor id aliquam dignissim risus diam dictum. A lectus in ridiculus viverra id ut </p>
-          </div>
-        </div>
-      </section>
-
-      <section ref={sectionRef} className={`md:h-screen flex md:flex-row p-9 flex-col items-center justify-around ${isVisible ? 'animation' : ''}`}>
-        <div className='md:w-[350px] md:h-[350px] w-[300px] h-[300px]' >
-          <img className="rounded-full shadow-2xl" src="/aboutus-logo.png" alt="" />
-        </div>
-        <div className="md:mt-0 mt-[50px]">
-          <h4 className='text-black font-semibold'>About Us</h4>
-          <h1 className='text-4xl text-[#020329] font-semibold'>Transform Security With <br /> Biometric Recognition. It's Just A <br /> Click Away With <span className="text-[#FA975C]">Digital Fortress</span></h1>
-          <p className='my-7 text-[#6A6A6C]'>Revolutionizing security with cutting-edge biometric solutions, Digital Fortress leads <br /> the way in authentication technology. Our innovations ensure unparalleled accuracy <br /> and reliability, empowering individuals and organizations with peace of mind </p>
-          <button className='text-sm bg-[#423359] hover:bg-[#6f5b8d] px-14 py-4'>See Details</button>
-        </div>
-      </section>
-
+      {/* Services Intro Start */}
       <section className={`md:h-[900px] md:mb-0 mb-9 bg-gradient-to-r from-[#F1F1F4]  to-[#DEDDEA]`}>
         <div className="flex p-7 flex-col items-center md:items-strech gap-8 text-black">
           <h4 className='text-black font-semibold text-center'>Our Products</h4>
@@ -158,12 +94,28 @@ function Main() {
           <button className='text-sm text-white bg-[#423359] px-14 py-4'>Contact Us</button>
         </div>
       </section>
+      {/* Services Anything End */}
 
-      <section className="flex flex-col pt-20 pb-36 justify-center items-center text-center gap-10 text-black ">
-        <h1 className="font-semibold text-4xl">Contact Us?</h1>
-        <p className="text-lg font-extralight">Reach out to us for inquiries. Support, or collaboration opportunities.</p>
-        <button className='text-sm text-white bg-[#423359] hover:bg-[#6f5b8d] px-14 py-4'>Click here</button>
-      </section>
+
+      {/* Services Testimonials Start */}
+      {/* <section ref={sectionRef} className={`md:h-screen ${isVisible ? 'animation' : ''}`}>
+        <div className="flex md:flex-row flex-col items-center justify-center gap-[150px]">
+          <div className="md:w-[450px] w-[300px] md:h-[300px] h-[260px] bg-[#ccc]">
+            <img src="/testimonials.png" alt="" />
+          </div>
+          <div className="md:w-[500px] w-full text-black p-7">
+            <h4 className='font-semibold text-sm text-black'>Testimonials</h4>
+            <h1 className='text-4xl my-2 font-semibold '>Hello World, Welcome to <br /> <span className="text-[#FA975C]">Digital Fortress</span></h1>
+            
+            <p className='font-light text-xs my-9'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor id aliquam dignissim risus diam dictum. A lectus in ridiculus viverra id ut dui volutpat volutpat. Vulputate sed imperdiet magna ac nunc faucibus. Enim eget egestas ipsum sed sed non ut nulla. Et consectetur venenatis vulputate aliquet gravida eget non. Nec aliquam dui morbi viverra. Arcu viverra augue tincidunt massa quam bibendum. <br /><br />Pharetra, in elementum mattis duis felis. In malesuada nisi, tincidunt ultrices tempus in tellus at sed. Rutrum est, lacus orci id convallis nibh ac. Justo dignissim eget cras aliquam, eu duis consectetur. Nunc quam sed tellus neque. Vitae mi magna gravida pretium dui. Porttitor ac eget urna egestas faucibus adipiscing </p>
+
+            <p className='font-semibold text-base'>Name-Position</p>
+          
+          </div>
+        </div>
+      </section> */}
+      {/* Services Testimonials End */}
+
 
       {/* Footer Section Start */}
       <section className="">
@@ -222,8 +174,11 @@ function Main() {
         </div>
       </section>
       {/* Footer Section End */}
-</>
+
+    
+    </>
   );
 }
 
-export default Main;
+// Export the Services component
+export default Services;

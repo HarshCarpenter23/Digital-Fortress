@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import Main from "./Pages/Main/pages";
 import AboutUs from "./Pages/AboutUs/pages";
-import Services from "./Pages/Services/pages";
+import Services from "./Pages/Products/pages";
 import ContactUs from "./Pages/ContactUs/pages";
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
         return <Main />;
       case 'AboutUs':
         return <AboutUs />;
-      case 'Services':
+      case 'Products':
         return <Services />;
       case 'ContactUs':
         return <ContactUs />;
@@ -39,11 +39,14 @@ export default function Home() {
         <div className="w-[200px]">
           <img src="/logo.svg" alt="" />
         </div>
-        <div className="flex font-light text-[#423359] md:mt-0 mt-6 gap-6">
+        <div className="flex font-light text-[#423359] md:mt-0 mt-6 gap-9">
           <button className="hover:text-indigo-900 hover:font-semibold" onClick={() => handleNavigation("Main")}>Home</button>
           <button className="hover:text-indigo-900 hover:font-semibold" onClick={() => handleNavigation("AboutUs")}>About Us</button>
-          <button className="hover:text-indigo-900 hover:font-semibold" onClick={() => handleNavigation("Services")}>Services</button>
-          <button className="hover:text-indigo-900 hover:font-semibold" onClick={() => handleNavigation("ContactUs")}>Contact Us</button>
+          <button className="hover:text-indigo-900 hover:font-semibold" onClick={() => handleNavigation("Products")}>Products</button>
+          
+        </div>
+        <div className="">
+        <button className="bg-[#423359] px-6 py-4 text-white hover:text-[#f1f1f1]" onClick={() => handleNavigation("ContactUs")}>Contact Us</button>
         </div>
       </div>
       {renderPage()} {/* Render the current page component */}
