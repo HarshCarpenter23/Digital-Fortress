@@ -113,29 +113,29 @@ import Footer from '@/app/components/Footer';
           <div className="flex md:flex-row flex-col justify-around items-center mt-12">
             <div className="w-[250px]">
             <Image
-              src="/cloud-summit.svg" // Path to your image
+              src="/Deeptech.png" // Path to your image
               alt="Description of the image"
               width = {250}
               height={300}
               className='md:mt-[25px] mt-[25px] h-[300px]'
             />
               <h3 className='text-xl font-semibold mt-9'>Cloud Security Alliance Summit</h3>
-              <p className='font-light text-xs'>Banglore</p>
+              <p className='font-light text-xs'>Bangalore</p>
             </div>
               <div className="w-[250px]">
               <Image
-                src="/deep-tech.svg" // Path to your image
+                src="/DIGITAL-FORTRESS-CSA.png" // Path to your image
                 alt="Description of the image"
                 width = {250}
                 height={300}
                 className='md:mt-0 mt-[25px] h-[300px]'
               />
-                <h3 className='text-xl font-semibold mt-9'>Deep Tech Summit</h3>
+                <h3 className='text-xl font-semibold mt-9'>DeepTech Cloud & AI Summit</h3>
                 <p className='font-light text-xs'>Vishakapatnam</p>
             </div>
               <div className="w-[250px]">
               <Image
-                src="/fido.png" // Path to your image
+                src="/FIDO_Alliance_logo.png" // Path to your image
                 alt="Description of the image"
                 className='md:mt-[15px] mt-[25px] h-[300px]'
                 width = {250}
