@@ -43,7 +43,7 @@ function Services() {
               </div>
 
               <div className="flex flex-col justify-around items-center gap-6 md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
-                <h3 className='text-xl font-semibold mt-9'>MauthN</h3>
+                <h3 className='text-xl font-semibold mt-9'>MAuthN</h3>
                 <Image
                   className='h-[250px]'
                   src="/m-auth.svg" // Path to your image
@@ -59,7 +59,7 @@ function Services() {
 
             <div className="flex md:flex-row flex-col gap-6 md:ml-[500px]">
               <div className="z-10 flex flex-col justify-around items-center gap-7 md:w-[350px] w-[300px] h-[300px] bg-[#F6F6F8] p-9 shadow-services">
-                <h3 className='text-xl font-semibold mt-9'>mXdr</h3>
+                <h3 className='text-xl font-semibold mt-9'>mXDR</h3>
                 <Image
                   className='h-[250px]'
                   src="/mxdr.svg" // Path to your image
